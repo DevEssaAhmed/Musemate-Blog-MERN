@@ -7,11 +7,11 @@ import Footer from "./components/Footer/Footer.jsx";
 
 const AppLayout = () => {
   return (
-    <>
+    <div className="font-opensans">
       <Navbar />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 };
 
