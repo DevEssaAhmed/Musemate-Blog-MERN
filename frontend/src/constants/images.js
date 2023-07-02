@@ -1,11 +1,11 @@
 import Logo from "../assets/logo.svg";
-
+import HeroImage from '../assets/HeroImage.svg'
 
 
 
 
 const images = {
-    Logo,
+    Logo, HeroImage
 }
 
 export default images
