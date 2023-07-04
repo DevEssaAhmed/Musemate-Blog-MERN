@@ -68,7 +68,7 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <section className='sticky top-0 right-0 left-0 z-50'>
+    <section className='sticky top-0 right-0 left-0 bg-white z-50'>
       <nav className='container mx-auto px-5 flex justify-between py-4 items-center'>
         <Link to='/'>
           <img className='w-36' src={images.Logo} alt='logo' />
