@@ -1,7 +1,11 @@
 import React from 'react';
+import { BsCheckLg } from 'react-icons/bs';
+import { AiOutlineClose } from 'react-icons/ai';
+
 import { images } from '../../constants';
 
 const ArticleCard = ({ className }) => {
+  const post =1
   return (
     <div
       className={`${className} roudned-xl overflow-hidden  shadow-[rgba(7,_65,_2100,_0.1)_0px_9px_30px]`}
@@ -32,9 +36,21 @@ const ArticleCard = ({ className }) => {
                 Viola Manisa
               </h4>
               <div className='flex items-center gap-x-2 '>
-                <span className='bg-[#36B37E] text-[#36B37E] w-fit bg-opacity-20 p-1.5 rounded-full'>
-                  ✔
-                </span>
+                {/* <span
+                  className={`${
+                    post.user.verified ? 'bg-[#36B37E]' : 'bg-red-500'
+                  } w-fit bg-opacity-20 p-1.5 rounded-full`}
+                >
+                  {post.user.verified ? (
+                    <BsCheckLg className='w-1.5 h-1.5 text-[#36B37E]' />
+                  ) : (
+                    <AiOutlineClose className='w-1.5 h-1.5 text-red-500' />
+                  )}
+                </span> */}
+                {/* <span className='italic text-dark-light text-xs md:text-sm'>
+                  {post.user.verified ? 'Verified' : 'Unverified'} writer
+                </span> */}
+
                 <span className='italic text-dark-light text-xs md:text-sm'>
                   Verified Writer
                 </span>
