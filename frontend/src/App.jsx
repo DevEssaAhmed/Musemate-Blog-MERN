@@ -1,13 +1,14 @@
-import "./App.css";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import HomePage from "./pages/HomePage/HomePage";
+import './App.css';
+import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import HomePage from './pages/HomePage/HomePage';
 
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer.jsx";
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer.jsx';
+import ArticleDetailsPage from './pages/ArticleDetailsPage/ArticleDetailsPage';
 
 const AppLayout = () => {
   return (
-    <div className="font-opensans">
+    <div className='font-opensans'>
       <Navbar />
       <Outlet />
       <Footer />
@@ -19,18 +20,18 @@ const appRouter = createBrowserRouter([
   // { path: "outlet", element: <Navbar /> },
 
   {
-    path: "/",
+    path: '/',
     element: <AppLayout />,
     // errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <HomePage />,
       },
-      // {
-      //   path: "/about",
-      //   element: <AboutPage />,
-      // },
+      {
+        path: 'blog/:id',
+        element: <ArticleDetailsPage />,
+      },
       //  {
       //   path: "/shop",
       //   element: <ShopPage />,
